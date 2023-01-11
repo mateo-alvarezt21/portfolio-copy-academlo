@@ -531,6 +531,13 @@ footer{
             color: rgb(177, 175, 175);
         }
 
+
+        #images-portafolio{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0%;
+        }
+
         /* ------------CONTACTO------------ */
 
 
