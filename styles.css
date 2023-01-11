@@ -263,7 +263,7 @@ body{
 #images-portafolio{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10%;
+    justify-content: center;
 }
 
 .ejemplos-portafolio{
@@ -327,10 +327,10 @@ footer{
     font-size: 20px;
     text-align: center;
 }
-@media (max-width: 382px){
+@media (max-width: 768px){
 
     body{
-        margin: 0;
+        margin: 0 auto;
         width: 381px;
     }
 
@@ -602,4 +602,44 @@ footer{
 }
 .br-3.animado{
     transform: rotate(45deg) translate(-10px, -8px);
+}
+
+
+@media (max-width: 992px){
+
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+    }
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+    #header-menu{
+        display: flex;
+        flex-direction: row;
+    }
+    #menu{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-right: 24%;
+        opacity: 0;
+    }
+
+    #empresas-data{
+        flex-direction: column;
+    }
+
+    .empresa{
+        margin: 0 auto;
+        margin-bottom: 31px;
+    }
 }
